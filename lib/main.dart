@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'ListView/Components/ScrollableList.dart';
+import 'ListView/ContectNumber/CardListView.dart';
+import 'ListView/ContectNumber/Animatedpage.dart';
+import 'ListView/Masjid.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
 
       ),
-      home: Scrollablelist(),
+      home: Animatedpage(),
 
     );
   }
