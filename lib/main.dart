@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'ListView/Components/ScrollableList.dart';
-import 'ListView/ContectNumber/CardListView.dart';
-import 'ListView/ContectNumber/Animatedpage.dart';
-import 'ListView/Masjid.dart';
+import 'package:flutterslive_widgets/ListView/ListviewBuilder/MosqueDetails.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,9 +19,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
 
       ),
-      home: Animatedpage(),
+      home: MosqueDetails(),
 
     );
   }
 }
+
 
