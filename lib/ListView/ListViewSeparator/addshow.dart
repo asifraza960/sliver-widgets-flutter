@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 import 'package:flutterslive_widgets/ListView/ListViewSeparator/components/team.dart';
 
 class Addshow extends StatefulWidget {
@@ -10,10 +9,16 @@ class Addshow extends StatefulWidget {
 }
 
 class _AddshowState extends State<Addshow> {
+  List<String> teamName = ['Team A','TeamB','Team C'];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Center(child: Text("Teams")),
+
+        backgroundColor: Colors.blue,
+      ),
       body: ListView.separated(
         itemCount: teamlist.length,
         itemBuilder: (context, index) {
@@ -30,9 +35,26 @@ class _AddshowState extends State<Addshow> {
             ),
           );
         },
-        separatorBuilder: (context, index) {
-          return Divider();
-        },
+          separatorBuilder: (context, index) {
+            if (index % 3 == 0 && index ~/ 2 < teamName.length) {
+              return Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                child: Center(
+                  child: Text(
+                    teamName[index ~/ 2],  // Correct mapping to teamName
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22,
+                    ),
+                  ),
+                ),
+              );
+            } else {
+              return const SizedBox();  // Always return a widget
+            }
+          }
+
       ),
     );
   }
