@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterslive_widgets/ListView/GridView/gridScreen.dart';
 import 'package:flutterslive_widgets/ListView/ListViewCustom/home.dart';
 import 'package:flutterslive_widgets/ListView/ListViewSeparator/addshow.dart';
 import 'package:flutterslive_widgets/ListView/ListviewBuilder/MosqueDetails.dart';
@@ -15,14 +16,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
 
       ),
-      home: Scroll(),
+      home: Gridscreen(),
 
     );
   }
