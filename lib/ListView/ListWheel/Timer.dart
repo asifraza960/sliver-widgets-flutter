@@ -15,6 +15,13 @@ class _WheelTimerState extends State<WheelTimer> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: Text("ListWheelScrollView",style: TextStyle(
+            color: Colors.white
+          ),),
+          centerTitle: true,
+        ),
       body: Stack(
         children: [
         Row(

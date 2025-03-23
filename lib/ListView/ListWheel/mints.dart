@@ -10,6 +10,7 @@ class Mymints extends StatelessWidget {
     return Container(
       child: Center(
         child: Text(
+          mint< 10 ? '0'+ mint.toString():
           mint.toString(),style:
         TextStyle(
         color: Colors.white,
