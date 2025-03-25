@@ -14,6 +14,7 @@ class SliverBar extends StatelessWidget {
         slivers: [
           SliverAppBar(
             expandedHeight: 300,
+            pinned: true,
             floating: true,
             snap: true,
             flexibleSpace: FlexibleSpaceBar(
