@@ -13,7 +13,7 @@ class SliverBar extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-
+            centerTitle: true,
             expandedHeight: 400,
             pinned: true,
             floating: true,
@@ -35,7 +35,6 @@ class SliverBar extends StatelessWidget {
                         random.nextInt(max),
                         random.nextInt(max),
                         random.nextInt(max),
-
                     ),
                     borderRadius: BorderRadius.circular(20),
 
