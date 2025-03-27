@@ -13,7 +13,8 @@ class SliverBar extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            expandedHeight: 300,
+
+            expandedHeight: 400,
             pinned: true,
             floating: true,
             snap: true,
@@ -22,7 +23,7 @@ class SliverBar extends StatelessWidget {
             ),
           ),
           SliverGrid.builder(
-            itemCount: 20,
+            itemCount: 30,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2), 
               itemBuilder: (context,index)=> Padding(
                 padding: const EdgeInsets.all(8.0),
