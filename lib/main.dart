@@ -8,6 +8,7 @@ import 'package:flutterslive_widgets/ListView/ListWheel/Timer.dart';
 import 'package:flutterslive_widgets/ListView/ListviewBuilder/MosqueDetails.dart';
 import 'package:flutterslive_widgets/ListView/Scrolling_Direction/Scroll.dart';
 import 'package:flutterslive_widgets/SliverWigets/SliverAppBAr/Sliver_bar.dart';
+import 'package:flutterslive_widgets/SliverWigets/SliverList/listSliver.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
 
       ),
-      home:Home()
+      home:listSliver()
 
     );
   }
