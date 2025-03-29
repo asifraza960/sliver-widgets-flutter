@@ -19,10 +19,9 @@ class _listSliverState extends State<listSliver> {
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               title: Text('SliverList Example'),
-              background: Image.network(
-                'https://source.unsplash.com/random/800x600',
-                fit: BoxFit.cover,
-              ),
+              background: Container(
+                color: Colors.blue,
+              )
             ),
           ),
           SliverList(
